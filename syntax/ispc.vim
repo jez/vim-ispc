@@ -16,9 +16,9 @@ unlet b:current_syntax
 syn keyword	ispcStatement	cbreak ccontinue creturn launch print reference soa sync task
 syn keyword	ispcConditional	cif
 syn keyword	ispcRepeat	cdo cfor cwhile foreach foreach_tiled foreach_unique foreach_active
-syn keyword	ispcBuiltin	programCount programIndex	
-syn keyword	ispcType	export uniform varying int8 int16 int32 int64
-syn keyword	ispcOperator	operator
+syn keyword	ispcBuiltin	programCount programIndex taskCount taskIndex threadCount threadIndex
+syn keyword	ispcType	export uniform varying int8 int16 int32 int64 uint uint8 uint16 uint32 uint64
+syn keyword	ispcOperator	operator new delete
 
 "double precision floating point number, with dot, optional exponent
 syn match	cFloat		display contained "\d\+\.\d*d[-+]\=\d*\>"
